@@ -2,9 +2,11 @@
 // exports
 // const person = { name: 'john' }
 
+const API_KEY = process.env.API_KEY
+
 exports.handler = async (event, context, cb) => {
   return {
     statusCode: 200,
-    body: 'Our First Netlify Function Example',
+    body: API_KEY
   }
 }
